@@ -20,6 +20,7 @@ jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 display-logo: true
 small-logo: "hackday_logo.svg"
 logo-width: 2
+logo-height: 
 
 show-map: yes
 map-src: "https://maps.google.com/maps?q=Shilling+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
