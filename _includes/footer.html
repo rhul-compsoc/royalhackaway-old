@@ -11,12 +11,10 @@
             <div class="col-md-4 col-sm-6 inner">
                 <h4>Next Event:</h4>
                 {% assign sorted-events = site.events | sort: 'start'%}
-                {% assign output = 0 %}
+                {% assign eventDisplayed = 0 %}
                 {% for event in sorted-events %}
-                    {% if event.is-over %}
-                        <!-- do nothing -->
-                    {% elsif event.is-public and event.is-over == false %}
-                        {% if output == 0 %}
+                    {% if event.is-public and event.end > site.time %}
+                        {% if eventDisplayed  == 0 %}
                             <div class="event-outline-container">
                                 <a class="no-hover-style" href="{{ page.slug }}">
                                     <b>{{ event.name }}</b>
@@ -27,12 +25,14 @@
                                     </ul>
                                 </a>
                             </div>
-                            {% assign output = 1 %}
+                            {% assign eventDisplayed  = 1 %}
                         {% endif %}
-                        {% elsif event.is-over == "false" and event.is-public %}
-                        <p>There are currently no upcoming events.</p>
                     {% endif %}
                 {% endfor %}
+                {% if eventDisplayed  == 0 %}
+                    <p>There are currently no upcoming events.</p>
+                {% endif %}
+
             </div>
 
             <div class="col-md-4 col-sm-6 inner">
