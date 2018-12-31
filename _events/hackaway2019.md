@@ -145,6 +145,12 @@ sponsors:
               image: "mlh.svg"
               colour: "#FFFFFF"
               shadow-colour: "#265a8f"
+            -
+              name: "Sticker Mule"
+              link: "https://www.stickermule.com/"
+              image: "stickermule-logo.svg"
+              colour: "#4E2817"
+              shadow-colour: "#3f1f11"
 
 
 
