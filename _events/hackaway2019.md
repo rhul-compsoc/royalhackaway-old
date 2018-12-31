@@ -2,8 +2,8 @@
 name: "Royal Hackaway 2019"
 is-public: true
 
-start: "2019-02-02T12:00:00+00:00"
-end: "2019-02-03T12:00:00+00:00"
+start: "2019-02-02T09:30:00+00:00"
+end: "2019-02-03T12:17:00+00:00"
 
 short-description: "An exciting 24 hour hackathon, for students from any university."
 
@@ -147,7 +147,7 @@ sponsors:
               shadow-colour: "#265a8f"
             -
               name: "Sticker Mule"
-              link: "https://www.stickermule.com/"
+              link: "http://hackp.ac/mlh-stickermule-hackathons"
               image: "stickermule-logo.svg"
               colour: "#4E2817"
               shadow-colour: "#3f1f11"
