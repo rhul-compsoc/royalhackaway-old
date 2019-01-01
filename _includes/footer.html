@@ -14,7 +14,7 @@
                 {% assign eventDisplayed = 0 %}
                 {% for event in sorted-events %}
                     {% if event.is-public and event.end > site.time %}
-                        {% if eventDisplayed  == 0 %}
+                        {% if eventDisplayed == 0 %}
                             <div class="event-outline-container">
                                 <a class="no-hover-style" href="{{ page.slug }}">
                                     <b>{{ event.name }}</b>
@@ -25,11 +25,11 @@
                                     </ul>
                                 </a>
                             </div>
-                            {% assign eventDisplayed  = 1 %}
+                            {% assign eventDisplayed = 1 %}
                         {% endif %}
                     {% endif %}
                 {% endfor %}
-                {% if eventDisplayed  == 0 %}
+                {% if eventDisplayed == 0 %}
                     <p>There are currently no upcoming events.</p>
                 {% endif %}
 
